@@ -1,5 +1,5 @@
 # Temps_pro
 
-Welcome to my repo.
+1. Welcome to my repo.
 
-This repo is going to be conataining HTML templates...
+2.  This repo is going to be conataining HTML templates...
