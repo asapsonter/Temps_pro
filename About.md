@@ -1,10 +1,8 @@
-# About Page
-**Hello, This website is about my portfolio. On this website i will put links for the latest technology i am working
-or have worked on**
+<h1> About Page </h1>
+<p>Hello, This website is about my portfolio. On this website i will put links for the latest technology i am working
+or have worked on</p>
 
-[Home page](index.html)
-
-
+<a href="index.html"> Home </a>
 
 
 
@@ -15,4 +13,6 @@ or have worked on**
 
 
 
-*Asapsonter*
+
+
+<p> <strong> Asapsonter </strong> </p>
