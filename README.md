@@ -2,4 +2,5 @@
 
 1. Welcome to my repo.
 
-2.  This repo is going to be conataining HTML templates...
+2. This is my own private site
+
