@@ -1,6 +1,4 @@
-# Temps_pro
+# MY PERSONAL PORTFOLIO PAGE
 
-1. Welcome to my repo.
-
-2. This is my own private site
+*WAY TOO BASIC HAHAH
 
