@@ -6,90 +6,81 @@
     <meta name="viewport" content="width=device-width,initial-scale=1">
     <title>asapsonter</title>
     <link rel="icon" href="/favicon.png" type="image/png">
-    <style>
-        .main-text {
-            font-size: 1.9em;
-            font-weight: bold;
-            color: black;
-            text-align: center;
-            margin-top: 10%;
-        }
-        button{
-            background-color:rgb(0, 195, 255);
-            }
-
-            button:hover{background-color:rgb(128, 121, 108);}
-
-            button:focus{background-color:rgb(116, 39, 39);}
-
-            a {
-            color: rgb(16, 17, 16);
-            font-weight: bold;
-            font-size: 0.9rem;
-            }
-
-            a.button{
-            color:rgb(24, 34, 24);
-            text-decoration: none;
-            }
-
-            a:visited {
-            color: rgb(211, 25, 25);
-            }
-
-            a:active {
-            color: blue;
-        }
-    </style>
+    <link href="CSS/style.css" rel="stylesheet">
 </head>
 
-<body style="font-family:monospace;background-color:antiquewhite">
-    <h1>☕ sipping coffee and programming  </h1> <span> <a href="About.html">About </a> </span>
-    <h2>working on new Tech</a></h2>
-    <hr>
-    <a href="mailto:samuel.aarga@gmail.com">Email</a>
-    <a href="https://github.com/asapsonter">Github</a>
-    <a href="https://twitter.com/asapsonter">Twitter</a>
-    <a href="https://dev.to/asapsonter">Dev.io</a>
-    <a href="https://reddit.com/u/Asap_sonter">Reddit</a>
-    <a href="https://www.linkedin.com/in/aarga-sonter">Linkedin</a>
-    <a href="https://discord.gg/tvVja6cR">Discord</a> 
-    
+<body>
+    <header>
 
+        <h1 class="heading">☕ sipping coffee and programming </h1> <a href="About.html">About </a> 
+        <hr>
+        <!-- dev account links-->
+    <nav>
+        <a href="mailto:samuel.aarga@gmail.com">Email</a>
+        <a href="https://github.com/asapsonter">Github</a>
+        <a href="https://twitter.com/asapsonter">Twitter</a>
+        <a href="https://dev.to/asapsonter">Dev.io</a>
+        <a href="https://reddit.com/u/Asap_sonter">Reddit</a>
+        <a href="https://www.linkedin.com/in/aarga-sonter">Linkedin</a>
+        <a href="https://discord.gg/tvVja6cR">Discord</a>
+    </nav>
+    </header>
 
-    <p style="display:flex;flex-direction:column;position:absolute;bottom:0">
-        <a style="color:rgb(36, 17, 17)" href="./simplicity.mp4">on simplicity</a>
-        <a style="color:rgb(31, 3, 3)" href="./learn_programming.mp4">learn programming</a>
-        <a>Sam Sonter&trade;
-        <script> document.write(new Date().getFullYear());</script></a>
-    </p>
-<main class="main">
-    <div class="main-text">
+    <main>
+        <div class="colums">
+            <!--introtext and resume download-->
+            <div class="intro-text">
+                <h2>Introduction</h2>
                 <p>
-                    Hi, I'm Sam. I'm a  developer based in Shenzhen, China. 
+                    Hi, I'm Sam. I'm a developer based in Shenzhen, China. <br> Currently working for Sycra
+                    Technologies.
                     <br>
                     <small> contact me from my email on the home page for work or jobs. Thanks</small>
                 </p>
                 <p>
-                <a class="button" href="RESUME.pdf" download><button id="button">Download Resume</button></a>
-                <small><blockquote> Resume might be outdated, but it's still a good reference.</blockquote> </small>
+                    <a class="button" href="RESUME.pdf" download><button id="button">Download Resume</button></a>
+                    <small>
+                        <blockquote> Resume might be outdated, but it's still a good reference.</blockquote>
+                    </small>
+                </p>
+            </div>
+
+            <!--list of projects -->
+            <div class="projects">
+                <h2>Projects</h2>
+               <ol>
+                   <li><a href="https://asapsonter.github.io/tour_project/">Tour guide interface</a></li>
+                   <li><a href="https://asapsonter.github.io/Resturant/">Resturant</a></li>
+                   <li><a href="https://github.com/asapsonter/china-stories"> Python Blog</a></li>
+                   <li><a href="https://github.com/asapsonter/web3_project"> Web 3  </a></li>
+               </ol>
+               
+                
+
+            </div>
+            <!--fun facts -->
+            <div class="fun-facts">
+                <h2>Fun Facts</h2>
+                <p>
+                    Do you know HTML was without CSS?
                 </p>
                     
-    </div>
-</main>
-<script>
-const items = document.querySelector('.button');
-button.animate([
-    { transform: 'translateX(0px)' },
-    { transform: 'translateX(100px)' }
-    ], {
-    duration: 6000,
-    easing: 'ease-in-out',
-    direction: 'alternate',
-    iterations: Infinity
-    });
 
-</script>
+            </div>
+        </div>
+
+    </main>
+    <footer>
+        <p>
+            <a style="color:rgb(36, 17, 17)" href="./simplicity.mp4">on simplicity</a>
+            <a style="color:rgb(31, 3, 3)" href="./learn_programming.mp4">learn programming</a>
+            <a>Sam Sonter&trade;
+                <script> document.write(new Date().getFullYear());</script>
+            </a>
+        </p>
+    </footer>
+    <script src="/JS/index.js">
+    </script>
 </body>
 
 </html>
