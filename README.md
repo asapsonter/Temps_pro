@@ -4,3 +4,5 @@
 
 2. This is my own private site
 
+* Feel free to pull and modify. 
+
