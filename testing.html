@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>My Portfolio</title>
+    <style>
+      /* Header */
+      .header {
+        background-color: skyblue;
+        text-align: center;
+        padding: 50px;
+      }
+      .header img {
+        border-radius: 50%;
+        max-width: 100%;
+        height: auto;
+      }
+
+      /* Media queries */
+      @media (min-width: 768px) {
+        /* For tablets */
+        .header {
+          padding: 100px;
+        }
+      }
+      @media (min-width: 1024px) {
+        /* For PCs */
+        .header {
+          padding: 150px;
+        }
+      }
+
+      /* Body */
+      body {
+        margin: 0;
+        font-family: Arial, sans-serif;
+      }
+      .main {
+        margin: 50px;
+        background-color: skyblue;
+      }
+
+      /* Sections */
+      section {
+        margin: 50px 0;
+      }
+      section h2 {
+        font-size: 2em;
+        margin-bottom: 20px;
+      }
+      section p {
+        font-size: 1.2em;
+      }
+
+      /* Footer */
+      .footer {
+        position: fixed;
+        bottom: 0;
+        width: 100%;
+        background-color: skyblue;
+        text-align: center;
+        padding: 20px;
+      }
+    </style>
+  </head>
+  <body>
+    <header class="header">
+      <img src="portrait.jpg" alt="Portrait">
+    </header>
+    <main class="main">
+      <section>
+        <h2>Breaking News</h2>
+        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Fusce sit amet elit a enim ullamcorper malesuada in vitae sem. Donec ultricies augue quis quam interdum suscipit.</p>
+      </section>
+      <section>
+        <h2>Fun Facts</h2>
+        <p>Suspendisse commodo tortor ut tortor ornare, quis hendrerit sapien rhoncus. Sed euismod, sapien sit amet laoreet varius, elit purus dapibus odio, ut varius mauris odio eu ex.</p>
+      </section>
+      <section>
+        <h2>Projects</h2>
+        <p>Nulla facilisi. Maecenas non tellus et velit consectetur dapibus nec vel nisl. Sed eget felis interdum, fermentum augue eget, efficitur ante.</p>
+      </section>
+    </main>
+    <footer class="footer">
+      <p>&copy; 2023 My Portfolio. All rights reserved.</p>
+    </footer>
+  </body>
+</html>
