@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <link href="https://fonts.googleapis.com/css?family=Exo+2" rel="stylesheet">
+    <link rel="stylesheet" href="CSS/teststyle.css">
+    <link rel="icon" href="/favicon.png" type="image/png">
+  </head>
+    <!-- Load htmx from a CDN -->
+    <script src="https://unpkg.com/htmx.org"></script>
+    <!-- Add some CSS code for the header and the sections -->
+    <title>Sam</title>
+  </head>
+  <body>
+    <!-- Replace this header element with your HTML code -->
+    <div class="header">
+      <div class="container">
+        <h1 class="header_icon">☕ sipping coffee and innovating the future</h1>
+        <p class="header_intro">Hi, I'm Sam, a software engineer and innovation lover.</p>
+        <nav class="header_nav">
+          <!-- Use hx-get to load each page content from another URL -->
+          <!-- Use hx-target to specify where to put the response -->
+          <!-- Use hx-swap to specify how to update the target element -->
+          <!-- Use hx-push-url to update the browser URL with each page URL -->
+          <a href="About.html" hx-get="/About.html" hx-target="#main-content" hx-swap="outerHTML" hx-push-url="true">About</a>
+          <a href="Skills.html" hx-get="/Skills.html" hx-target="#main-content" hx-swap="outerHTML" hx-push-url="true">Skills</a>
+          <a href="Portfolio.html" hx-get="/Portfolio.html" hx-target="#main-content" hx-swap="outerHTML" hx-push-url="true">Portfolio</a>
+          <a href="Contact.html" hx-get="/Contact.html" hx-target="#main-content" hx-swap="outerHTML" hx-push-url="true">Contact</a>
+        </nav>
+      </div>
+    </div>
+    <!-- Use an id for this main element, so that it can be targeted by HTMX -->
+    <main id="main-content" class="main">
+      <!-- Add a class for each section, so that they can be styled by CSS -->
+      <section class="section" hx-post="/breaking-news" hx-trigger="click" hx-target="#news-content" hx-swap="innerHTML">
+        <h2>Breaking News</h2>
+        <!-- Use hx-select to select a specific element from the response -->
+        <div id="news-content" hx-select="#news"></div>
+      </section>
+      <section class="section" hx-patch="/fun-facts" hx-trigger="change from:input" hx-target="#facts-content" hx-swap="innerHTML">
+        <h2>Fun Facts</h2>
+        <!-- Use hx-include to include some data from another element in the request -->
+        <form hx-include="#user-id">
+          <!-- Use hx-ext to load an extension for validation -->
+          <input type="text" name="fact-name" required hx-ext="validation">
+          <!-- Add a class for the button, so that it can be styled by CSS -->
+          <button type="submit" class="button">Submit</button>
+        </form>
+        <!-- Use hx-push-url to update the browser URL with the response URL -->
+        <div id="facts-content" hx-push-url="true"></div>
+      </section>
+      <section class="section" hx-get="/projects" hx-trigger="load">
+        <h2>Projects and resume</h2>
+        <!-- Use hx-swap-oob to swap out-of-band elements from the response -->
+        <p hx-swap-oob="true"></p>
+      </section>
+    </main>
+    <!-- Use a hidden input to store some data for the fun facts section -->
+    <input type="hidden" id="user-id" name="user-id" value="1234">
+  </body>
+</html>
