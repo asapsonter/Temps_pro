@@ -15,16 +15,19 @@
     <div class="header">
       <div class="container">
         <h1 class="header_icon">☕ sipping coffee and innovating the future</h1>
-        <p class="header_intro">Hi, I'm Sam, a software engineer and innovation lover.</p>
+        <p class="header_intro">Hi, Welcome to my website.</p>
         <nav class="header_nav">
           <!-- Use hx-get to load each page content from another URL -->
           <!-- Use hx-target to specify where to put the response -->
           <!-- Use hx-swap to specify how to update the target element -->
           <!-- Use hx-push-url to update the browser URL with each page URL -->
           <a href="About.html" hx-get="/About.html" hx-target="#main-content" hx-swap="outerHTML" hx-push-url="true">About</a>
-          <a href="Skills.html" hx-get="/Skills.html" hx-target="#main-content" hx-swap="outerHTML" hx-push-url="true">Skills</a>
-          <a href="Portfolio.html" hx-get="/Portfolio.html" hx-target="#main-content" hx-swap="outerHTML" hx-push-url="true">Portfolio</a>
-          <a href="Contact.html" hx-get="/Contact.html" hx-target="#main-content" hx-swap="outerHTML" hx-push-url="true">Contact</a>
+          <a href="https://www.linkedin.com/in/aarga-sonter" target="_blank">linkedin</a>
+          <a href="https://github.com/asapsonter" target="_blank">Github</a>
+          <a href="https://twitter.com/asapsonter" target="_blank">X</a>
+          <!-- <a href="https://twitter.com/asapsonter" hx-get="https://twitter.com/asapsonter" hx-target="#main-content" hx-swap="outerHTML" hx-push-url="true">X</a>
+          <a href="https://www.linkedin.com/in/aarga-sonter" hx-get="https://www.linkedin.com/in/aarga-sonter" hx-target="#main-content" hx-swap="outerHTML" hx-push-url="true">linkedin</a>
+          <a href="https://github.com/asapsonter" hx-get="https://github.com/asapsonter" hx-target="#main-content" hx-swap="outerHTML" hx-push-url="true">Github</a> -->
         </nav>
       </div>
     </div>
@@ -32,7 +35,10 @@
     <main id="main-content" class="main">
       <!-- Add a class for each section, so that they can be styled by CSS -->
       <section class="section" hx-post="/breaking-news" hx-trigger="click" hx-target="#news-content" hx-swap="innerHTML">
-        <h2>Breaking News</h2>
+      <div class="section1_image">
+        <!-- <img class="img-background" style="width: 100%; height: 100%;" 
+        src="/quantum img.jpeg"     alt="quantum backgroung" -->
+      </div>
         <!-- Use hx-select to select a specific element from the response -->
         <div id="news-content" hx-select="#news"></div>
       </section>

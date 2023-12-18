@@ -4,7 +4,7 @@
 * {
   font-family: 'Exo 2', sans-serif;
   margin: 0;
-  padding: 5px;
+  padding: 0;
   -webkit-box-sizing: border-box;
   box-sizing: border-box;
   outline: none;
@@ -45,8 +45,9 @@
 
 .section {
   background-color: #f1f1f1; /* Change the background color of the sections */
-  padding: 20px; /* Add some space around the section content */
-  margin: 20px 0; /* Add some space above and below the sections */
+  padding: 0; /* Add some space around the section content */
+  margin: 20px 0  ; /* Add some space above and below the sections */
+  
 }
 
 .section h2 {
@@ -85,7 +86,12 @@
   
  
 }
-
+/* first secion background image */
+.section1_image {
+  background-image: url('/quantum img.jpeg');
+  background-size: cover;
+  background-position: center center; height: 50vh;
+}
 
 
 
