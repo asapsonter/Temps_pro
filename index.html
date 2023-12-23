@@ -1,95 +1,55 @@
 <!DOCTYPE html>
-<html lang="en">
+<html>
 
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width,initial-scale=1">
-    <title>asapsonter</title>
-    <link rel="icon" href="/favicon.png" type="image/png">
-    <link href="CSS/style.css" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css?family=Exo+2" rel="stylesheet">
+  <link rel="stylesheet" href="assets/teststyle.css">
+  <link rel="icon" href="images/favicon.png" type="image/png">
+</head>
+<!-- Load htmx from a CDN -->
+<script src="https://unpkg.com/htmx.org"></script>
+<script src="https://unpkg.com/htmx.org/dist/htmx.min.js"></script>
+<title>Sam</title>
 </head>
 
 <body>
-    <header>
 
-        <h1 class="heading">☕ sipping coffee and programming </h1> <a href="About.html">About </a> 
-        <hr>
-        <!-- dev account links-->
-    <nav>
-        <a href="mailto:samuel.aarga@gmail.com">Email</a>
-        <a href="https://github.com/asapsonter">Github</a>
-        <a href="https://twitter.com/asapsonter">Twitter</a>
-        <a href="https://dev.to/asapsonter">Dev.io</a>
-        <a href="https://reddit.com/u/Asap_sonter">Reddit</a>
-        <a href="https://www.linkedin.com/in/aarga-sonter">Linkedin</a>
-        <a href="https://discord.gg/tvVja6cR">Discord</a>
-    </nav>
-    </header>
-
-    <main>
-        <div class="colums">
-            <!--introtext and resume download-->
-            <div class="intro-text">
-                <h2>Introduction</h2>
-                <p>
-                    Hi, I'm Sam. I'm a developer based in Shenzhen, China. <br> Currently working for Sycra
-                    Technologies.
-                    <br>
-                    <small> contact me from my email on the home page for work or jobs. Thanks</small>
-                </p>
-                <p>
-<<<<<<< HEAD
-                    <a class="button" href="RESUME.pdf" download><button id="button">Download Resume</button></a>
-=======
-                    <a class="button" href="src/RESUME.pdf" download><button id="button">Download Resume</button></a>
->>>>>>> web/base1
-                    <small>
-                        <blockquote> Resume might be outdated, but it's still a good reference.</blockquote>
-                    </small>
-                </p>
-            </div>
-
-            <!--list of projects -->
-            <div class="projects">
-                <h2>Projects</h2>
-               <ol>
-                   <li><a href="https://asapsonter.github.io/tour_project/">Tour guide interface</a></li>
-                   <li><a href="https://asapsonter.github.io/Resturant/">Resturant</a></li>
-                   <li><a href="https://github.com/asapsonter/china-stories"> Python Blog</a></li>
-                   <li><a href="https://github.com/asapsonter/web3_project"> Web 3  </a></li>
-               </ol>
-               
-                
-
-            </div>
-            <!--fun facts -->
-            <div class="fun-facts">
-                <h2>Fun Facts</h2>
-                <p>
-                    Do you know HTML was without CSS?
-                </p>
-                    
-
-            </div>
-        </div>
-
-    </main>
-    <footer>
-        <p>
-<<<<<<< HEAD
-            <a style="color:rgb(36, 17, 17)" href="./simplicity.mp4">on simplicity</a>
-            <a style="color:rgb(31, 3, 3)" href="./learn_programming.mp4">learn programming</a>
-=======
-            <a style="color:rgb(36, 17, 17)" href="src/simplicity.mp4">on simplicity</a>
-            <a style="color:rgb(31, 3, 3)" href="src/learn_programming.mp4">learn programming</a>
->>>>>>> web/base1
-            <a>Sam Sonter&trade;
-                <script> document.write(new Date().getFullYear());</script>
-            </a>
-        </p>
-    </footer>
-    <script src="/JS/index.js">
-    </script>
+  <div class="header">
+    <div class="container">
+      <div class="nav_control">
+        <h1 class="header_icon">☕ sipping coffee and innovating the future</h1>
+        <p class="header_intro">Hi, Welcome to my website.</p>
+        <nav class="header_nav">
+          <!-- Use hx-get to load each page content from another URL -->
+          <!-- Use hx-target to specify where to put the response -->
+          <!-- Use hx-swap to specify how to update the target element -->
+          <!-- Use hx-push-url to update the browser URL with each page URL -->
+          <a href="About.html" hx-get="/About.html" hx-target="#main-content" hx-swap="outerHTML"
+            hx-push-url="true">About</a>
+          <a href="https://www.linkedin.com/in/aarga-sonter" target="_blank">linkedin</a>
+          <a href="https://github.com/asapsonter" target="_blank">Github</a>
+          <a href="https://twitter.com/asapsonter" target="_blank">X</a>
+          <a href="#" target="_blank">Discord</a>
+          <a href="#" target="_blank">Reddit</a>
+          <!-- <a href="https://twitter.com/asapsonter" hx-get="https://twitter.com/asapsonter" hx-target="#main-content" hx-swap="outerHTML" hx-push-url="true">X</a>
+          <a href="https://www.linkedin.com/in/aarga-sonter" hx-get="https://www.linkedin.com/in/aarga-sonter" hx-target="#main-content" hx-swap="outerHTML" hx-push-url="true">linkedin</a>
+          <a href="https://github.com/asapsonter" hx-get="https://github.com/asapsonter" hx-target="#main-content" hx-swap="outerHTML" hx-push-url="true">Github</a> -->
+        </nav>
+      </div>
+    </div>
+  </div>
+  <!-- Use an id for this main element, so that it can be targeted by HTMX -->
+  <main id="main-content" class="main">
+    <!-- Add a class for each section, so that they can be styled by CSS -->
+    <section class="section" hx-post="https://news.yahoo.com/rss/" hx-trigger="click" hx-target="#news-content"
+      hx-swap="innerHTML">
+      <div class="section1_image">
+    </section>
+    <!--<footer="section" hx-get="/projects" hx-trigger="load">
+        
+        <p hx-swap-oob="true"></p>
+      </footer> -->
+  </main>
 </body>
 
 </html>

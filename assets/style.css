@@ -1,5 +1,5 @@
 
-<<<<<<< HEAD
+
 /* default */
 *{
     margin: 0;
@@ -17,7 +17,7 @@ h1{
   
  
 
-=======
+
 /*import fonts*/
 @font-face{
     font-family: 'Caskaydia Cove Nerd Font'  ;
@@ -56,11 +56,11 @@ h1{
 h2{
     font-size: 20px;
     font-weight: bold ;
-<<<<<<< HEAD
+
     font-family: BlinkMacSystemFont, 'Segoe UI',
-=======
+
     font-family: 'Segoe UI',
->>>>>>> web/base1
+
     Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans',
      'Helvetica Neue', sans-serif;
     margin-bottom: 8px;
@@ -116,11 +116,7 @@ nav{
     box-sizing: border-box;
     
 }
-<<<<<<< HEAD
 
-=======
-/* break flex direction @ 600 px */
->>>>>>> web/base1
 @media (max-width: 600px){
     .colums{
         flex-direction: column;
@@ -128,10 +124,7 @@ nav{
         box-sizing: border-box;
         
     }
-<<<<<<< HEAD
-=======
 
->>>>>>> web/base1
 }
 
 .projects, .intro-text, .fun-facts {
