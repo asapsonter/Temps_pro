@@ -93,18 +93,13 @@
 .button:hover {
   background-color: #16a085; /* Change the background color of the buttons when hovered */
 }
-
-
-
-
 /* first secion background image */
 .section1_image {
   /*background-image: url('/images/quantum img.jpeg');
   background-size: cover;*/
-  background-position:  center; height: 100vh;
+  background-position:  center; height: 100vh; /* image background  to 100vh height */
   background-color: #1abc9c;
 }
-
 footer{
   background-color:  #1abc9c;
   justify-content: center;
@@ -112,13 +107,14 @@ footer{
   flex-direction: column;
   align-items: center; 
 }
-.footer_div{
-margin: 40px 0 40px 0;
+/* style for footer  elements*/
+.find_text, .email_me, #copyRight {
+  color : #ffffff;
+  margin: 5px 0 5px 0;
 }
-
-
-
-
+.footer_div{
+margin: 40px 0 40px 0; /* set footer margin 40 px up and down , 0 side start and end */
+}
   /* Media queries */
   @media (min-width: 768px) {
 

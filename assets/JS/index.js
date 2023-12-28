@@ -1,5 +1,6 @@
+
+
 // var jsdom = require("jsdom");
-// var $ = require("jquery")(new jsdom.JSDOM().window);
 
 // const items = document.querySelector(".button");
 // button.animate(
@@ -14,7 +15,7 @@
 
 $(function () {
   var currentDate = new Date().getFullYear();
-  $("#copyRight").html("Copyright © " + currentDate + " Fireship LLC <br>");
+  $("#copyRight").html(`Copyright ©  ${currentDate} asapsonter ltd  <br>`);
 });
 window.onload = function () {
   if (window.jQuery) {
@@ -24,8 +25,4 @@ window.onload = function () {
     // jQuery is not loaded
     console.log("jQuery has not loaded!");
   }
-};
-
-$(document).onload = function () {
-  alert("jQuery has loaded!");
 };

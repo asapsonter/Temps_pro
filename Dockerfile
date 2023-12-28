@@ -1,29 +1,13 @@
+# Use an official Nginx runtime as the base image
+FROM nginx:latest
 
-# Use an official Node.js runtime as the base image
-FROM node:14
-
-# Set the working directory in the Docker image
-WORKDIR /usr/src/app
-
-# Copy package.json and package-lock.json into the Docker image
-COPY package*.json ./
-
-# Install the dependencies in the Docker image
-RUN npm install
-
-# Copy the rest of your code into the Docker image
-COPY . .
+# Copy your static files into the Docker image
+COPY ./assets /usr/share/nginx/html/assets
+COPY ./assets/JS/index.js /usr/share/nginx/html/assets/JS/
+COPY index.html /usr/share/nginx/html
 
 # Expose port 8080
 EXPOSE 8080
 
-# Start the application
-CMD [ "node", "server.js" ]
-
-# FROM nginx:stable
-
-
-# COPY . /usr/share/nginx/html
-
-# EXPOSE 80
-# CMD ["nginx", "-g", "daemon off;"]
+# Start Nginx
+CMD ["nginx", "-g", "daemon off;"]
