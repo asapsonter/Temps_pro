@@ -5,12 +5,20 @@
   <link href="https://fonts.googleapis.com/css?family=Exo+2" rel="stylesheet">
   <link rel="stylesheet" href="assets/teststyle.css">
   <link rel="icon" href="images/favicon.png" type="image/png">
-</head>
+  <!-- load jquery from node_modules -->
+<script src="node_modules/jquery/dist/jquery.min.js"></script>
+
 <!-- Load htmx from a CDN -->
 <script src="https://unpkg.com/htmx.org"></script>
-<script src="https://unpkg.com/htmx.org/dist/htmx.min.js"></script>
-<title>Sam</title>
+
+<script>
+  $(document).ready(function () {
+    alert("jQuery is working!");
+  });
+</script>
 </head>
+
+
 
 <body>
 
@@ -44,12 +52,24 @@
     <section class="section" hx-post="https://news.yahoo.com/rss/" hx-trigger="click" hx-target="#news-content"
       hx-swap="innerHTML">
       <div class="section1_image">
+      </div>
     </section>
-    <!--<footer="section" hx-get="/projects" hx-trigger="load">
-        
-        <p hx-swap-oob="true"></p>
-      </footer> -->
   </main>
+  <footer>
+    <div class="footer_div">
+      <div class="find_text">Find an issue with this page? <a class="find_issue_link"
+          href="#">Fix it on GitHub</a></div>
+          <div class="email_me">
+            Need help? Email <a href="mailto:sam.sonter@hotmail.com"><strong
+                class="text-white font-bold">My Email</strong></a>
+          </div>
+          <div id="copyRight">
+            Copyright ©  asapsonter <br>
+          </div>
+          
+    </div>
+  </footer>
+  <script src="./assets/index.js"></script>
 </body>
 
 </html>
