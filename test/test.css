@@ -14,7 +14,7 @@
   -webkit-transition: .2s linear;
   transition: .2s linear;
 } 
-/* Header *******************/
+/* Header *********************************/
 .header {
   background-color: #1abc9c;
   /* Change the background color of the header */
@@ -33,7 +33,7 @@
   display: flex; 
   flex-direction: column;
   align-items: center; 
-  height: 30vh;
+  height: 50vh;
 }
 .header_icon, .header_intro, .header_nav {
   text-align: center;
@@ -64,8 +64,10 @@
 .header_nav a:hover {
   color: #f1f1f1; /* Change the text color of the header links when hovered */
 }
+
 /* //////////// END OF HEADER STYLEEEEEEEEEEEEEEEEEEEEEEEEEEEEE */
 
+/* first secion background image */
 .section {
   background-color: #f1f1f1; /* Change the background color of the sections */
   padding: 0; /* Add some space around the section content */
@@ -73,23 +75,29 @@
   background-color: #1abc9c; /* section background  color */
 }
 
-.button {
-  background-color: #1abc9c; /* Change the background color of the buttons */
-  color: white; /* Change the text color of the buttons */
-  border: none; /* Remove the border from the buttons */
-  padding: 10px 20px; /* Add some space around the button text */
-  cursor: pointer; /* Change the cursor to a pointer when hovering over the buttons */
+/* style for news */
+.news_div{
+  justify-content: center; /* Center the items horizontally */
+  max-width: 1200px; /* Set a maximum width for the header content */
+  margin: auto; /* Center the header content */
+  align-items: center; 
+  height: 100vh;  /* view point height */
+  border-radius: 2px;
+  border: 2px solid red;
+}
+/* news grid container */
+.grid_for_news_container{
+  display: grid;
+  grid-template-columns: repeat(4, 1fr); /* Four equal columns */
+  grid-gap: 10px; /* Add some space between the boxes */
+
 }
 
-.button:hover {
-  background-color: #16a085; /* Change the background color of the buttons when hovered */
-}
-/* first secion background image */
-.section1_image {
-  /*background-image: url('/images/quantum img.jpeg');
-  background-size: cover;*/
-  background-position:  center; height: 100vh; /* image background  to 100vh height */
-  background-color: #1abc9c;
+/* Style each div box */
+.grid-item {
+  background-color: #f1f1f1; /* Change the background color of the boxes */
+  padding: 20px; /* Add some padding around the box content */
+  text-align: center; /* Center the box content */
 }
 footer{
   background-color:  #1abc9c;
@@ -105,6 +113,10 @@ footer{
 }
 .footer_div{
 margin: 40px 0 40px 0; /* set footer margin 40 px up and down , 0 side start and end */
+}
+
+.find_text, .email_me a {
+  color: #000011; 
 }
   /* Media queries */
   @media (min-width: 768px) {
