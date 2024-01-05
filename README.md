@@ -1,7 +1,6 @@
 
+
 # MY PERSONAL PORTFOLIO PAGE
-
-
 
 1. Welcome to my repo.
 
