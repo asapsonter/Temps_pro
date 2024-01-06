@@ -73,23 +73,16 @@
   background-color: #1abc9c; /* section background  color */
 }
 
-.button {
-  background-color: #1abc9c; /* Change the background color of the buttons */
-  color: white; /* Change the text color of the buttons */
-  border: none; /* Remove the border from the buttons */
-  padding: 10px 20px; /* Add some space around the button text */
-  cursor: pointer; /* Change the cursor to a pointer when hovering over the buttons */
-}
 
-.button:hover {
-  background-color: #16a085; /* Change the background color of the buttons when hovered */
-}
+
+
 /* first secion background image */
-.section1_image {
-  /*background-image: url('/images/quantum img.jpeg');
-  background-size: cover;*/
-  background-position:  center; height: 100vh; /* image background  to 100vh height */
-  background-color: #1abc9c;
+.news_div {
+  justify-content: center; /* Center the items horizontally */
+  max-width: 1200px; /* Set a maximum width for the header content */
+  margin: auto; /* Center the header content */
+  align-items: center; 
+  height: 50vh;  /* view point height */
 }
 footer{
   background-color:  #1abc9c;

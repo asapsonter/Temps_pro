@@ -33,7 +33,7 @@
   display: flex; 
   flex-direction: column;
   align-items: center; 
-  height: 50vh;
+  height: 30vh;
 }
 .header_icon, .header_intro, .header_nav {
   text-align: center;
