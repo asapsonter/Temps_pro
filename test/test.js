@@ -54,7 +54,7 @@ window.onload = function () {
 //GET https://newsapi.org/v2/everything?q=Apple&from=2024-01-04&sortBy=popularity&apiKey=API_KEY
 
 var url =
-  "http://newsapi.org/v2/top-headlines?sources=yahoo-news&apiKey=108eaed5470f4e2995d7f386979078c5";
+  "https://newsapi.org/v2/top-headlines?sources=yahoo-news&apiKey=108eaed5470f4e2995d7f386979078c5";
  
 
 var req = new Request(url);
@@ -62,3 +62,18 @@ fetch(req)
 .then(function (response) {
   console.log( response.json());
 })
+
+
+///test sample.
+// Import the JSON file
+const data = require('./sample.json');
+
+// Access the 'title' and 'full_description' properties
+data.results.forEach(result => {
+  const title = result.title;
+  const fullDescription = result.full_description;
+
+  // Now you can use 'title' and 'fullDescription' in your code
+  console.log(`Title: ${title}`);
+  console.log(`Full Description: ${fullDescription}`);
+});
