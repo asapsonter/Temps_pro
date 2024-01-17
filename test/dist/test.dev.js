@@ -2,11 +2,10 @@
 
 // get news feeds from yahoo news API
 // alert("yahoo news");
-// $(document).ready(function () {
-//   var currentDate = new Date().getFullYear();
-//   $("#copyRight").html(`Copyright © ${currentDate} asapsonter ltd <br>`);
-// });
-// window.onload = function () {
+$(document).ready(function () {
+  var currentDate = new Date().getFullYear();
+  $("#copyRight").html("Copyright \xA9 ".concat(currentDate, " asapsonter ltd <br>"));
+}); // window.onload = function () {
 //   if (window.jQuery) {
 //     // jQuery is loaded
 //     console.log("jQuery has loaded!");
@@ -53,6 +52,7 @@
 //     $(".grid-item").append(h4, article);
 //   });});
 //pub_361627a038b5ff106b13dfba0a669f9074126;
+
 var url = "https://newsdata.io/api/1/news?apikey=pub_361627a038b5ff106b13dfba0a669f9074126";
 var req = new Request(url);
 fetch(req).then(function (response) {

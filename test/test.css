@@ -115,7 +115,7 @@ footer{
 margin: 40px 0 40px 0; /* set footer margin 40 px up and down , 0 side start and end */
 }
 
-.find_text, .email_me a {
+.find_issue_link, .email_link {
   color: #000011; 
 }
   /* Media queries */

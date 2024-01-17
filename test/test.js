@@ -2,10 +2,10 @@
 // alert("yahoo news");
 
 
-// $(document).ready(function () {
-//   var currentDate = new Date().getFullYear();
-//   $("#copyRight").html(`Copyright © ${currentDate} asapsonter ltd <br>`);
-// });
+ $(document).ready(function () {
+   var currentDate = new Date().getFullYear();
+   $("#copyRight").html(`Copyright © ${currentDate} asapsonter ltd <br>`);
+ });
 
 // window.onload = function () {
 //   if (window.jQuery) {
